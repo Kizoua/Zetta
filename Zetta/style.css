@@ -1,0 +1,52 @@
+body{
+    overflow: hidden;
+}
+
+.center{
+    position: relative;
+    left: 50%;
+}
+
+.left{
+    position: relative;
+    left: -30px;
+    top: -5px;
+}
+
+.right{
+    position: relative;
+    align-items: left;
+}
+
+.header{
+    background-image: url(./img/header.png);
+    background-size: 100% 1280px;
+    padding: 4px;
+    border-bottom: 5px solid #2e2e2e;
+    position: static;
+}
+
+.search-box{
+    position: absolute;
+    left: 75%;
+    top: 5px;
+    background: #1d1d1d;
+    height: 40px;
+    width: 310px;
+    border-radius: 20px;
+    display: flex;
+    align-items: center;
+}
+
+.search-txt{
+    border: none;
+    background: none;
+    outline: none;
+    padding: 5px;
+    color: #f0f5fb;
+    font-size: 14px;
+}
+
+#text-box{
+    width: 310px;
+}
