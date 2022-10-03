@@ -13,7 +13,7 @@
         <link rel="stylesheet" type="text/css" href="style.css">
     </head>
 
-    <body style= "margin: 0; background-color: #1d1d1d;">
+    <body style= "display: flex;flex-direction: column;margin: 0; background-color: #1d1d1d;align-items: stretch;">
         <div class="header-top">                          <!-- Cabeçário -->
             <a class="right" href="index.html">           <!-- "Z" -->
                 <img src="./img/Z.png">
@@ -26,8 +26,8 @@
                 <input type="text" class="search-txt" id="text-box" placeholder="Procurar no Zetta">
             </div>
         </div>
-        
-        <main style="display: flex; flex-direction: row;">
+        <div class="seila">
+        <main style="display: flex; flex-direction: row; min-height: 100vh; width: 100%">
             <div class="header-left">                     <!-- Cabeçário da Esquerda -->
                 <div class="header-button" style="display: flex; flex-direction: row; align-items: center;">
                     <img src="./img/home.png" class="icon-button">
@@ -64,15 +64,16 @@
                     </a>
                 </div>
             </div>
-            <div class="feed">                            <!-- Feed -->
-                 <div class="feed">              <!-- Escrever Mensagem -->
-                    <input type="text" class="feed-search-txt" id="feed-text-box" placeholder="No que está pensando?">
+            <div style="flex: 1;">                            <!-- Feed -->
+                 <div class="feed" style="padding: 15px">              <!-- Escrever Mensagem -->
+                    <textarea type="text" class="feed-txt-area" id="feed-text-box" placeholder="No que está pensando?"></textarea>
                     <br>
                     <a class="send">
-                        Enviar
+                        Enviar  
                     </a>
                  </div>
             </div>
         </main>
+    </div>
     </body>
 </html>

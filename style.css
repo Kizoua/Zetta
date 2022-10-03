@@ -1,6 +1,8 @@
 body{
     overflow: hidden;
     font-family: 'Rubik', sans-serif;
+    min-height: 100vh;
+    min-width: 100vw;
 }
 
 .center{
@@ -13,8 +15,8 @@ body{
 }
 /* --------------------------------------------------------------------------------------------------------*/
 .header-top{
-    background-image: url(./img/header.png);
-    background-size: 100% 1280px;
+    background-image: linear-gradient(to right, #9c00ff, #1600ff);
+    background-size: 100 1280px;
     padding: 4px;
     padding-left: 40px;
     padding-right: 15px;
@@ -43,15 +45,14 @@ body{
 }
 /* --------------------------------------------------------------------------------------------------------*/
 .header-left{
-    padding: 40px;
-    padding-top: 3%;
-    width: max-content;
-    min-height: 100%;
     display: flex;
-    flex-direction: column;
+    padding-left: 40px;
+    padding-top: 3%;
     gap: 15px;
+    width: 20%;
+    min-height: 100%;
+    flex-direction: column;
     border-right: 1px solid #5c5c5c;
-    box-sizing: border-box;
 }
 
 .header-button{
@@ -81,19 +82,23 @@ body{
 }
 /* --------------------------------------------------------------------------------------------------------*/
 .feed{
-    min-width: 50%;
-    min-height: 100%;
     display: flex;
     flex-direction: column;
-    padding: 15px;
+    align-items: stretch;
+    /*max-width: max-content;*/
+    max-width: 60%;
+    border-right: 1px solid #5c5c5c;
+    min-height: 100%;
 }
 
 .send{
+    display: flex;
+    flex-direction: row;
     background-color: #2e2e2e;
     border-radius: 50px;
     padding: 1.5%;
     max-width: max-content;
-    text-align: right;
+    align-self: flex-end;
     color: #f0f5fb;
 }
 
@@ -102,13 +107,20 @@ body{
     height: 310px;
 }
 
-.feed-search-txt{
-    width: 90%;
+.feed-txt-area{
     border: none;
-    border-radius: 50px;
-    background: none;
+    border-radius: 20px;
+    background: #2e2e2e;
     outline: none;
     padding: 10px;
     color: #f0f5fb;
     font-size: 20px;
+    resize: none;
+    min-height: 150px;
+    align-self: stretch;
+    min-width: 200px;
+}
+
+main{
+    width: 100%;
 }
