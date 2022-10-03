@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Página Inicial | Zetta</title>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+        <link rel="apple-touch-icon" sizes="180x180" href="./img/apple-touch-icon.png">
+        <link rel="icon" type="image/png" sizes="32x32" href="./img/zetta-32x32.png">
+        <link rel="icon" type="image/png" sizes="16x16" href="./img/zetta-16x16.png">
+        <link rel="stylesheet" type="text/css" href="style.css">
+    </head>
+
+    <body style= "margin: 0; background-color: #1d1d1d;">
+        <div class="header-top">                          <!-- Cabeçário -->
+            <a class="right" href="index.html">           <!-- "Z" -->
+                <img src="./img/Z.png">
+            </a>
+
+            <div class="search-box">                      <!-- Caixa de Pesquisa -->
+                <a>
+                    <img src="./img/lupa.png" alt="Lupa" width="25" height="25" style="padding: 10px;">
+                </a>
+                <input type="text" class="search-txt" id="text-box" placeholder="Procurar no Zetta">
+            </div>
+        </div>
+        
+        <main style="display: flex; flex-direction: row;">
+            <div class="header-left">                     <!-- Cabeçário da Esquerda -->
+                <div class="header-button" style="display: flex; flex-direction: row; align-items: center;">
+                    <img src="./img/home.png" class="icon-button">
+                    <a class="header-button-txt">
+                    Inicial
+                    </a>
+                </div>
+
+                <div class="header-button" style="display: flex; flex-direction: row; align-items: center;">
+                    <img src="./img/hashtag.png" class="icon-button">
+                    <a class="header-button-txt">
+                    Explorar
+                    </a>
+                </div>
+
+                <div class="header-button" style="display: flex; flex-direction: row; align-items: center;">
+                    <img src="./img/bell.png" class="icon-button">
+                    <a class="header-button-txt">
+                    Notificações
+                    </a>
+                </div>
+
+                <div class="header-button" style="display: flex; flex-direction: row; align-items: center;">
+                    <img src="./img/mail.png" class="icon-button">
+                    <a class="header-button-txt">
+                    Mensagens
+                    </a>
+                </div>
+
+                <div class="header-button" style="display: flex; flex-direction: row; align-items: center;">
+                    <img src="./img/profile.png" class="icon-button">
+                    <a class="header-button-txt">
+                    Perfil
+                    </a>
+                </div>
+            </div>
+            <div class="feed">                            <!-- Feed -->
+                 <div class="feed">              <!-- Escrever Mensagem -->
+                    <input type="text" class="feed-search-txt" id="feed-text-box" placeholder="No que está pensando?">
+                    <br>
+                    <a class="send">
+                        Enviar
+                    </a>
+                 </div>
+            </div>
+        </main>
+    </body>
+</html>
